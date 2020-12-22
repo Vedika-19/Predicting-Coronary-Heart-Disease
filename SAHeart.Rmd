@@ -86,10 +86,6 @@ confusionMatrix(factor(pred1), factor(testing$chd_036))
 
 #Conclusion: Confusion matrix shows that our model could predict 57 people does not have chd which was correct and 22 people was predicted as having chd which was false. Here we could improve our model as the patients whose predictions was wrong is at risk. Similarly, it predicted that 3 people doesnot have chd which was wrong as they had chd and 10 people who have chd was predicted correctly.
 
-precision=57/(57+3)
-precision
-
-#Conclusion: We get the precision od 95%. Hence, we can say that our model can predict 95% of data as correct predictions.
 ```
 
 ```{r}
@@ -115,9 +111,7 @@ pred1= ifelse(pred1>0.5, 1,0)
 confusionMatrix(factor(pred1), factor(testing$chd_036))
 #Conclusion: Confusion matrix shows that our model could predict 48 people does not have chd which was correct and 16 people was predicted as having chd which was false. Here we could improve our model as the patients whose predictions was wrong is at risk. Similarly, it predicted that 12 people doesnot have chd which was wrong as they had chd and 16 people who have chd was predicted correctly.
 
-precision1=48/(48+12)
-precision1
-#Conclusion: We get the precision od 80%. Hence, we can say that our model can predict 80% of data as correct predictions using CART.
+
 ```
 
 ```{r}
@@ -140,10 +134,6 @@ pred2= ifelse(pred2>0.5, 1,0)
 confusionMatrix(factor(pred2), factor(testing$chd_036))
 #Conclusion: Confusion matrix shows that our model could predict 55 people does not have chd which was correct and 17 people was predicted as having chd which was false. Here we could improve our model as the patients whose predictions was wrong is at risk. Similarly, it predicted that 5 people doesnot have chd which was wrong as they had chd and 15 people who have chd was predicted correctly.
 
-
-precision2=55/(55+5)
-precision2
-#Conclusion: We get the precision od 91.66%. Hence, we can say that our model can predict 91.66% of data as correct predictions using CART.
 ```
 
 ```{r}
