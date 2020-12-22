@@ -137,15 +137,12 @@ confusionMatrix(factor(pred2), factor(testing$chd_036))
 ```
 
 ```{r}
-#Conclusion: Among CART and Random Forest, we can say that Random Forest is better than CART as we get both the accuracy from ROC curve and precision is more for Random Forest than CART. 
-#We see the most important splitting criteria is age in our case. The decision tree formed is first divided on the basis of age.
+#Conclusion: Among CART and Random Forest, we can say that Random Forest is better than CART as the acuracy of ROC curve is more for Random Forest.
 
-#The precision of the Random Forest model is 91.66%
 ```
 
 ```{r}
 #Conclusion: From the ROC curve we see the accuracy of Logistic Regression is 87.86% which is more than Random Forest (i.e. 80.10%).
-#We can also see that our Logistic regression gives better precision than random forest. 
 #So we can conclude that Logistic Regression gives better model as compared to Random forest.
 ```
 
